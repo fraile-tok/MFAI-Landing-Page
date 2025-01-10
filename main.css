@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling the container */
+#container {
+    background-color: black;
+    background-image: url("bg_img_blur.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the logo */
+#logo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: opacity .3s ease;
+}
+
+#logo img {
+    height: 100px;
+}
+
+#logo:hover {
+    opacity: 0.8;
+}
+
+/* Styling the text block */
+#texto {
+    text-align: center;
+    color: white;
+    font-family: "Futura", Arial, sans-serif;
+}
+
+#texto h1 {
+    margin: 10px 0;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#texto h2 {
+    margin: 10px 0;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+#texto h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#texto h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: .8;
+}
+
+#cta {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color .5s ease;
+    transition: transform .3s ease;
+}
+
+#cta:hover {
+    background-color: black;
+    transform: scale(1.1);
+    transition: background-color .5s ease;
+    transition: transform .3s ease;
+}
+
+#whats {
+    display: inline-block;
+    padding: 20px 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color .5s ease;
+    transition: transform .3s ease;
+}
+
+#whats:hover {
+    text-decoration: underline;
+}
+
+#whats svg {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    #texto h1 {
+        font-size: 34px;
+    }
+    #texto h2 {
+        font-size: 26px;
+    }
+    #texto h3 {
+        font-size: 18px;
+    }
+}
